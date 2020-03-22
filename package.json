@@ -1,0 +1,9 @@
+{
+    "name": "shopproofjs",
+    "description": "Drin-Tin casting for Javascript",
+    "author": "CV Drin-Tin Technical Lead <jmila@leadtech.com>",
+    "dependencies": {
+        "collections": "^5.0.5"
+    },
+    "engine": "node 6.9.1"
+}
