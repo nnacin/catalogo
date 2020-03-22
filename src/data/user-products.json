@@ -1,0 +1,7 @@
+{
+    "data": {
+        "Boy": ["Laptop", "PS5", "Tablet", "Móvil", "Deportivas", "Gorra", "Camisa", "Canicas"],
+        "Child": ["PS5", "Kit Lego", "Deportivas", "Gorra", "Canicas"],
+        "Girl": ["Laptop", "Tablet", "Móvil", "Deportivas", "Falda"]
+    }
+}

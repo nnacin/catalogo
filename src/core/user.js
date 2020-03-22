@@ -1,5 +1,9 @@
 "use strict";
 
-class User {}
+class User {
+    constructor(userType) {
+        this._userType = userType;
+    }
+}
 
 module.exports = User;

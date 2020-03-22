@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "type": "Boy",
+            "discount": 50,
+            "limit": 300
+        },
+        {
+            "type": "Child",
+            "discount": 80,
+            "limit": 49
+
+        },
+        {
+            "type": "Girl",
+            "discount": 70,
+            "limit": 200  
+        }
+    ]
+}

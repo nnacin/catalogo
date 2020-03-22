@@ -1,0 +1,47 @@
+{
+    "data": [
+        {
+            "name": "Laptop",
+            "price": 1000
+        },
+        {
+            "name": "PS5",
+            "price": 400
+
+        },
+        {
+            "name": "Tablet",
+            "price": 300
+        },
+        {
+            "name": "Móvil",
+            "price": 220
+        },
+        {
+            "name": "Kit Lego",
+            "price": 140
+
+        },
+        {
+            "name": "Deportivas",
+            "price": 120
+        },
+        {
+            "name": "Falda",
+            "price": 60
+        },
+        {
+            "name": "Gora",
+            "price": 50
+
+        },
+        {
+            "name": "Camisa",
+            "price": 40
+        },
+        {
+            "name": "Canicas",
+            "price": 5
+        }
+    ]
+}
