@@ -9,10 +9,13 @@ class PageProduct extends Product {
         this._user = new PageUser(userType);
     }
 
+    calculateDiscount() {
+        return 1-this._user.getDiscount()/100;
+    }
+
     getAmountAfterDiscount() {
         const isAboveLimit = this._price > this._user.getLimit()
-        return isAboveLimit ? (this._price*this._user.getDiscount())/100 : this._price;
-        // TODO: Implement getAmountAfterDiscount() method
+        return isAboveLimit ? this._price*this.calculateDiscount() : this._price;
     }
 
 }

@@ -9,7 +9,7 @@ class PageCatalog extends Catalog {
     constructor(user) {
         const userType = user.getUserType()
         super(userType)
-        this._user = userType;
+        //this._user = userType;
        
         let userProds = this._products.filter(product => {
             return userProducts.data[userType].includes(product.getName()) ? true : false;
