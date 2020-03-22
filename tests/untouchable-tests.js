@@ -6,11 +6,11 @@ let assert = require("assert");
 
 
 let total = calculate("Child");
-assert(total === 528, total, "Unexpected result for Child catalog");
+assert(total === 528, "Unexpected result for Child catalog");
 console.log("Child assertion succeed!");
 
 total = calculate("Boy");
-assert(total === 1020, "total, Unexpected result for Boy catalog");
+assert(total === 1020, "Unexpected result for Boy catalog");
 console.log("Boy assertion succeed!");
 
 total = calculate("Girl");

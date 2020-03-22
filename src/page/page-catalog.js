@@ -7,25 +7,16 @@ let userProducts = require("../data/user-products.json");
 
 class PageCatalog extends Catalog {
     constructor(user) {
-        const userType = user.getUserType()
-        super(userType)
-        //this._user = userType;
-       
-        let userProds = this._products.filter(product => {
-            return userProducts.data[userType].includes(product.getName()) ? true : false;
-        })
+        super();
+        const userType = user.getUserType()       
+        let userProds = this._products.filter(product => userProducts.data[userType].includes(product.getName()));
         userProds = userProds.map(product => {
-            return new PageProduct(product.getName(), product.getPrice(), userType)
-           // return userProducts.data[userType].includes(product.getName()) ? true : false;
+            return new PageProduct(product.getName(), product.getPrice(), userType);
         })
-        const allUserProductAfterDiscount = userProds.map(prod => {
-                return { price: prod.getAmountAfterDiscount(), name: prod.getName() };
-        }).sort(function(a, b){return b.price-a.price}).slice(0,3)
-        //this._products = new ProductCollection(userProds)
-        const prods = allUserProductAfterDiscount.map(prod => prod.name)
-        this._products = new ProductCollection(userProds.filter(prod => {
-                return prods.includes(prod.getName()) ? true : false;
-        }));
+        const top3UserProducts = userProds
+            .sort(function(a, b){return b.getAmountAfterDiscount()-a.getAmountAfterDiscount()})
+            .slice(0,3);
+        this._products = new ProductCollection(top3UserProducts);
     }
 
     /**
